@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(docker ps --filter \"name=user-service\" --format \"table {{.Names}}\\\\t{{.Status}}\")",
+      "Bash(docker ps --filter \"name=user-service\" --format \"{{.Status}}\")",
+      "Bash(git -C /home/aman/personal/micro-service status)",
+      "Bash(git -C /home/aman/personal/micro-service remote -v)",
+      "Bash(git -C /home/aman/personal/micro-service checkout -b add-gitignore)",
+      "Bash(/home/aman/personal/micro-service/.gitignore:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git -C /home/aman/personal/micro-service push -u origin add-gitignore)"
+    ]
+  }
+}
